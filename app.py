@@ -9,6 +9,8 @@ from transformers import pipeline, AutoTokenizer, T5ForConditionalGeneration
 import os
 from groq import Groq
 
+os.system("python -m spacy download en_core_web_sm")
+
 # Initialize Groq API client
 client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
